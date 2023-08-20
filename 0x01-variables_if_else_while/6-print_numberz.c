@@ -10,12 +10,13 @@
 
 int main(void)
 {
-	char bo = bo + 0;
+	int bo = 0;
 
 	while (bo < 10)
 	{
 		putchar(bo + '0');
 			bo++;
 	}
+	putchar('\n');
 	return (0);
 }
