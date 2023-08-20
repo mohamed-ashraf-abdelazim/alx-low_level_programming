@@ -10,7 +10,7 @@
 
 int main(void)
 {
-	int bo = '0';
+	int bo = 0;
 
 	while (bo < 10)
 	{
