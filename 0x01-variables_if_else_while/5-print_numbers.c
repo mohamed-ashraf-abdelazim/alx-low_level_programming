@@ -17,6 +17,7 @@ int main(void)
 		printf("%d", bo);
 		bo++;
 	}
+	printf("\n");
 	return (0);
 
 }
