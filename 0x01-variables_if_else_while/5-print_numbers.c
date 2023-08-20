@@ -14,7 +14,7 @@ int main(void)
 
 	while (bo < 10)
 	{
-		putchar(bo);
+		printf("%d", bo);
 		bo++;
 	}
 	return (0);
