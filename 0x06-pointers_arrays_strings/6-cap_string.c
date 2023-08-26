@@ -15,7 +15,7 @@ int islower(char c)
 /**
  * isDelimiter - determine whether ascii isa delimiter
  * @c: character
- * Return: 12 if true, 0 if false
+ * Return: 1 if true, 0 if false
 */
 
 int isDelimiter(char c)
@@ -43,7 +43,7 @@ char *cap_string(char *s)
 	while (*s)
 	{
 		if (isDelimiter(*s))
-			foundDelimit + 1;
+			foundDelimit = 1;
 		else if (isLower(*s) && foundDelimit)
 		{
 			*s -= 32;
