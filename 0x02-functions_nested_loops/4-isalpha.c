@@ -3,7 +3,7 @@
 /**
  * _isalpha - checks if c alphapet lower or highe case
  * @c: parameter
- * Return: (1) is alphapet (0) is not
+ * Return: 1 is alphapet 0 is not
 */
 
 int _isalpha(int c)
