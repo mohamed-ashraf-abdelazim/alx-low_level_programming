@@ -2,15 +2,13 @@
 
 /**
  * print_alphabet - prints alphapet
- * Return: (0) sccess
 */
 
 void print_alphabet(void)
 {
-	for (int j = 'n'; j <= 'z'; j++)
-	{
-		_putchar(j);
-	}
+	int ch;
+
+	for (ch = 'a'; ch <= 'z'; ch++)
+		_putchar(ch);
 	_putchar('\n');
-	return (0);
 }
