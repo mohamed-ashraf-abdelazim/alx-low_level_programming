@@ -8,13 +8,6 @@
 
 int _abs(int n)
 {
-	if (n >= '0')
-		_putchar(n);
-	else
-	{
-		int z = n * -1;
-
-		_putchar(z);
-	}
-	return (0);
+	if (n < '0')
+		return (n * -1);
 }
