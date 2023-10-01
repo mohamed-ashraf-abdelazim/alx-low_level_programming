@@ -8,16 +8,12 @@
 
 int _strlen_recursion(char *s)
 {
-	int num;
+	int num = 0;
 
-	if (*s != '\0')
-	{
-		_putchar('\n');
-	}
-	else
+	if (*s > '\0')
 	{
 		num = num + 1;
-		_strlen_recursion(s++);
+		_strlen_recursion(s++) + 1;
 	}
 	return (num);
 }
