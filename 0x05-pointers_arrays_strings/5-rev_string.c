@@ -1,0 +1,14 @@
+#include "main.h"
+
+/**
+ * rev_string - reverses the string
+ * @s: parameter
+*/
+
+void rev_string(char *s)
+{
+	int i;
+
+	for (i = 0; s[i] != '\0'; i++)
+	;
+}
