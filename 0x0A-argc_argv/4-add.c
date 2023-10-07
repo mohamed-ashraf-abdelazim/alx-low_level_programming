@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
 
 	if (argc == 1)
 		printf("0\n");
-	if (argv[i] >= 64)
+	if (atoi(argv[i]) >= 64)
 		printf("Error\n");
 	else
 	{
