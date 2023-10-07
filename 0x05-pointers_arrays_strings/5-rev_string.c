@@ -10,9 +10,12 @@ void rev_string(char *s)
 	int length, i, middle;
 	char temp;
 
+	middle = length / 2;
+
+	/* calculates the length of string */
 	for (length = 0; *s != '\0'; s++)
 		 length++;
-	middle = length / 2;
+	/* reverse the string by swapping it*/
 	for (i = 0; i < middle; i++)
 	{
 		s[i] = temp;
