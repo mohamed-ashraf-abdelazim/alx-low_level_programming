@@ -1,4 +1,4 @@
-#define "function_pointers.h"
+#include "function_pointers.h"
 
 /**
  * print_name - prints a name in either upper or same
