@@ -15,8 +15,8 @@ char *_strdup(char *str)
 		return (NULL);
 	while(i<=strlen(str))
 	{
-		s = malloc(INT_MAX)
-		if (s == NULL)
+		nstr = malloc(INT_MAX);
+		if (nstr == NULL)
 		{
 			fprintf(stderr, "failed to allocate memory\n")
 		}
