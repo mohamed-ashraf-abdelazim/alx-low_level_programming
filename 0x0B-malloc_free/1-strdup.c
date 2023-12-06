@@ -15,14 +15,11 @@ char *_strdup(char *str)
 		return (NULL);
 	if (nstr == 0)
 		return (NULL);
-	else
+	for (i = 0; i <= strlen(str); i++)
 	{
-		for (i = 0; i <= strlen(str); i++)
-		{
 		nstr[i] = str[i];
-		}
-		nstr[i + 1] = '\0';
 	}
+	nstr[i + 1] = '\0';
 	return (nstr);
 	free(nstr);
 }
