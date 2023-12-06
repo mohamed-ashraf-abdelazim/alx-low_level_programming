@@ -13,6 +13,15 @@ char *_strdup(char *str)
 
 	if (str == NULL)
 		return (NULL);
+	while(i<=strlen(str))
+	{
+		s = malloc(INT_MAX)
+		if (s == NULL)
+		{
+			fprintf(stderr, "failed to allocate memory\n")
+		}
+
+	}
 	for (i = 0; i <= strlen(str); i++)
 	{
 		nstr[i] = str[i];
