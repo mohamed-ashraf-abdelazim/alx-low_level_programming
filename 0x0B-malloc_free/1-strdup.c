@@ -17,7 +17,7 @@ char *_strdup(char *str)
 		fprintf(stderr, "failed to allocate memory\n");
 	else
 	{
-		for (i = 0; i < strlen(str); i++)
+		for (i = 0; i <= strlen(str); i++)
 		{
 		nstr[i] = str[i];
 		}
