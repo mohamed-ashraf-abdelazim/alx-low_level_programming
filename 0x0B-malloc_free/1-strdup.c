@@ -14,11 +14,14 @@ char *_strdup(char *str)
 	if (str == NULL)
 		return (NULL);
 	else if (nstr == NULL)
-		return (NULL);
-	for (i = 0; i < strlen(str); i++)
+		fprintf(stderr, "failed to allocate memory\n");
+	else
 	{
+		for (i = 0; i < strlen(str); i++)
+		{
 		nstr[i] = str[i];
+		}
+		return (nstr);
+		free(nstr);
 	}
-	return (nstr);
-	free(nstr);
 }
