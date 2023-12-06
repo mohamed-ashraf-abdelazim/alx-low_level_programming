@@ -12,7 +12,7 @@ char *str_concat(char *s1, char *s2)
 	char *nstr;
 
 	nstr = malloc(sizeof(char) * (strlen(s1) + strlen(s2)) + 1);
-	unsigned int i;
+	long long unsigned int i;
 
 	if (s1 == NULL)
 		s1 = '\0';
