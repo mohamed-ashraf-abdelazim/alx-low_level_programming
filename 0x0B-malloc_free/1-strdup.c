@@ -10,6 +10,7 @@ char *_strdup(char *str)
 {
 	char *nstr = malloc(strlen(str) * sizeof(char));
 	long unsigned int i;
+	i = 0;
 
 	if (str == NULL)
 		return (NULL);
@@ -22,7 +23,7 @@ char *_strdup(char *str)
 		}
 
 	}
-	for (i = 0; i <= strlen(str); i++)
+	for (; i <= strlen(str); i++)
 	{
 		nstr[i] = str[i];
 	}
