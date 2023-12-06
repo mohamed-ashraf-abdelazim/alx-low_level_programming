@@ -12,12 +12,9 @@ char *_strdup(char *str)
 	unsigned int i;
 
 	if (str == NULL)
-	{
-		fprintf(stderr, "failed to allocate memory\n");
 		return (NULL);
-	}
-	if (nstr == NULL)
-		fprintf(stderr, "failed to allocate memory\n");
+	if (nstr == 0)
+		return (NULL);
 	else
 	{
 		for (i = 0; i <= strlen(str); i++)
