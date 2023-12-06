@@ -13,7 +13,7 @@ char *_strdup(char *str)
 
 	if (str == NULL)
 		return (NULL);
-	else if (nstr == NULL)
+	if (nstr == NULL)
 		fprintf(stderr, "failed to allocate memory\n");
 	else
 	{
