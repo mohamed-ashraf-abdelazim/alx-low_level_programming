@@ -9,21 +9,13 @@
 char *_strdup(char *str)
 {
 	char *nstr = malloc(strlen(str) * sizeof(char));
-	long unsigned int i;
-	i = 0;
+	unsigned int i;
 
 	if (str == NULL)
 		return (NULL);
-	while(i<=strlen(str))
-	{
-		nstr = malloc(INT_MAX);
-		if (nstr == NULL)
-		{
-			fprintf(stderr, "failed to allocate memory\n");
-		}
-
-	}
-	for (; i <= strlen(str); i++)
+	else if (nstr == NULL)
+		return (NULL);
+	for (i = 0; i < strlen(str); i++)
 	{
 		nstr[i] = str[i];
 	}
