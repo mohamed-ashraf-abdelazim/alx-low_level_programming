@@ -9,13 +9,13 @@
  * Description: dog profile
 */
 
-typedef struct
+struct dog
 {
 	char *name;
 	float age;
 	char *owner;
 
-} dog;
+};
 
 
 #endif
