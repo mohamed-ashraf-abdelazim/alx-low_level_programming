@@ -17,8 +17,7 @@ unsigned int binary_to_uint(const char *b)
 	{
 		if (*b != '0' && *b != '1')
 			return (0);
-		g = g * 2 + (*b - '0');
-		*b++;
+		g = g * 2 + (*b++ - '0');
 	}
 	return (g);
 }
